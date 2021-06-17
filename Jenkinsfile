@@ -13,7 +13,6 @@ pipeline {
                 script {
                     properties([pipelineTriggers([githubPush()])])
                 }
-                }
             }
         }
         
