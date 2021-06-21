@@ -1,6 +1,8 @@
 pipeline {
-    agent {
-        label 'windows'
+    agent any
+    
+    triggers {
+        pollSCM("*/2 * * * *")
     }
 
     tools {
